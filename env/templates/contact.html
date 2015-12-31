@@ -1,0 +1,27 @@
+<!-- uses base.html for the inital HTML needed for a page DOCTYPE <html><head><body> etc. -->
+{% extends "base.html" %}
+
+{% block content%}
+	
+	{% for message in get_flashed_messages() %}
+		<div class="flash">{{message}}</div>
+	{% endfor %}
+
+	<form action="/contact" method="post">
+		{{ form.hidden_tag() }}
+ 
+	    {{ form.name.label }}
+	    {{ form.name }}
+		<br />	 
+	    {{ form.email.label }}
+	    {{ form.email }}
+	 	<br />
+	    {{ form.subject.label }}
+	    {{ form.subject }}
+	 	<br />
+	    {{ form.message.label }}
+	    {{ form.message }}
+	 	<br />
+	    {{ form.submit }}
+	</form>
+{% endblock %}
