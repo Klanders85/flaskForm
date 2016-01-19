@@ -3,15 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{title}}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename="main.css") }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename="responsive.css") }}">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
+	<header>
+      <a href="/" id="logo">
+        <h1>Beyond Remodels</h1>
+      </a>
+      <nav>
+        <ul>
+          	<li><a href="/">Portfolio</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="/contact">Contact</a></li>
-		</ul>
-	</nav>
+        </ul>
+      </nav>
+    </header>
 
 	<h2>This is the {{page_title}} View</h2>
 

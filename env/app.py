@@ -36,7 +36,7 @@ def index_view():
 	print (request.headers)
 	return render_template(
 		"index.html",
-		page_title = "Home"
+		page_title = "Portfolio"
 	)
 
 # About Route
