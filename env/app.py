@@ -1,14 +1,16 @@
+#YOU HAVE STUFF COMMENTED OUT HERE FOR THE FORM/MAIL HANDLING
+
 # import Flask and some of its methods
 from flask import Flask, render_template, request, flash
 
 # import Class created in forms.py named ContactForm
-from forms import ContactForm
+# from forms import ContactForm
 
 # not exactly sure what the .ext. is but I know it's what gets the mail Class from flask and Message and Mail are its methods
-from flask.ext.mail import Message, Mail
+# from flask.ext.mail import Message, Mail
 
 # new instance of mail Class
-mail = Mail()
+# mail = Mail()
 
 # new instance of flask, saved as aoo
 app = Flask(__name__)
@@ -28,7 +30,7 @@ app.config["MAIL_USERNAME"] = "kellylanders2@gmail.com"
 app.config["MAIL_PASSWORD"] = "ipcdvlugcwpgqqvc"
 
 # attaches mail instance to the flask app instance
-mail.init_app(app)
+# mail.init_app(app)
 
 # Home / Index Route
 @app.route('/')
