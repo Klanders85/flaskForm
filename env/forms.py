@@ -1,10 +1,10 @@
-# # import wtf forms from flask and get the Form Class
+# # # import wtf forms from flask and get the Form Class
 # from flask.ext.wtf import Form
 
-# # import the Classes from the wtf forms
+# # # import the Classes from the wtf forms
 # from wtforms import TextField, TextAreaField, SubmitField, validators, ValidationError
 
-# # create a Class named ContactForm which will inherit the Form Class
+# # # create a Class named ContactForm which will inherit the Form Class
 # class ContactForm(Form):
 # 	# properties of the Class
 # 	name  = TextField("Name", [validators.Required()])
