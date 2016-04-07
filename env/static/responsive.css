@@ -60,9 +60,9 @@
     margin-bottom: 60px;
   }
 
-  #gallery{
-    justfiy-content: flex-start;
-    align-items: stretch;
+  #gallery div{
+    width: 30%;
+    float: left;
   }
 }
 
